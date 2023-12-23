@@ -15,7 +15,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +23,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.849);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
 }
